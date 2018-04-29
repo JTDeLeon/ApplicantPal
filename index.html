@@ -8,9 +8,6 @@
   <body>
     <header>
       <h1>Applicant Pal</h1>
-    </header>
-
-    <main>
       <div class="inputs">
         <label for="position-name">Position Name:</label>
         <input
@@ -18,10 +15,21 @@
           placeholder="Position Name"
           id="position-name"
         ></input>
-        <input type="button">Submit</input>
+        <button
+          id="sub-btn"
+        >Submit</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="list">
+        <h2>Position List:</h2>
+        <ul id="position-list"></ul>
       </div>
     </main>
 
-
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+    <script src="view.js"></script>
   </body>
 </html>
